@@ -3,51 +3,17 @@ title: "Conferences and teaching"
 ---
 
 ## Conferences (selection)
-* 2022 - Invited talk at [Multi-Omics ONLINE](https://frontlinegenomics.com/multi-omics-online-july-2022/), virtual 
-* 2022 - Invited keynote at [Applied Bioinformatics in Life Sciences](https://www.vibconferences.be/events/applied-bioinformatics-in-life-sciences-4th-edition), Leuven 
-* 2022 - Invited keynote at [Workshop in Mathematical and Computational Biology](https://sites.google.com/view/wmcb2022/home), virtual 
-* 2022 - Invited talk at [Cardio-Pulmonary Institute (CPI) retreat](https://www.cpi-online.de), virtual
-* 2021 - Talk at [ELLIS Life Annual Symposium](https://www.ellis-life-heidelberg.eu/latest/?p=214), virtual
-* 2021 - Invited talk at [CBB seminar of Duke University](https://genome.duke.edu/education/cbb/computational-biology-seminar), virtual
-* 2021 - Invited talk at [EMBL-EBI Industry Programme Workshop](https://www.ebi.ac.uk/industry) on *Network Reconstructions From Multi-Level Data*, virtual
-* 2021 - Talk at [Probabilistic Modeling In Genomics (PROBGEN 2021)](https://meetings.cshl.edu/meetings.aspx?meet=PROBGEN&year=21), virtual
-* 2020 - Talk at [ELLIS Health Workshop: Explainable Machine Learning & Biological Mechanisms](https://ellis.eu/events/ellis-health-workshop-explainable-machine-learning-biological-mechanisms), virtual
-* 2020 - Invited keynote and chair at [EuroBioc 2020](https://eurobioc2020.bioconductor.org), virtual
-* 2020 - Invited talk at [e-RUM 2020](https://2020.erum.io), virtual
-* 2019 - Invited keynote at [Single Cell OMICS data analysis workshop](https://canceropole-paca.com/agenda/single-cell-omics-data-analysis-workshop-2nd-edition/), Nice
-* 2018 - Invited tutorial at [New Directions in Single Cell Analysis](http://www.sound-biomed.eu/2018/02/28/final-consortium-meeting/), Heidelberg
-* 2017 - Talk at [Stanford - EMBL Conference on Personalized Health](https://events.stanford.edu/events/706/70645/), Stanford 
-* 2017 - Talk at [Joint Statistical Meetings](https://ww2.amstat.org/meetings/jsm/2017/), Baltimore
-* 2017 - Invited talk at [Heidelberger Kolloquium Medizinische Biometrie](https://www.klinikum.uni-heidelberg.de/medizinische-informatik/willkommen/veranstaltungen-und-termine/kolloquium/kolloquium/kolloquium), Heidelberg
-* 2017 - Flash-talk at [EMBO|EMBL Symposium: From Single- to Multiomics: Applications and Challenges in Data Integration](https://www.embo-embl-symposia.org/symposia/2017/EES17-10/), Heidelberg
-* 2017 - Talk at [Statistical Computing Workshop](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp17), Reisenburg 
-* 2014 - Talk at [International Symposium on Nonlinear Theory and its Applications](https://chaos.keiei.shikoku-u.ac.jp/NOLTA14/), Lucerne (*best paper award*)
+* 2023 - Talk titled "Single cell genomics meet human genetics" at [Broad Institute ](https://www.broadinstitute.org/), Boston, USA
+* 2023 - Talk titled "Single nucleotide variant calling from single cell sequencing using Monopogen" at [Texas Single Cell Seminar](https://www.mdanderson.org/research/research-resources/core-facilities/cprit-single-core/events.html), virtual
+* 2023 - Poster titled "Single nucleotide variant calling from single cell sequencing using Monopogen" at [NCI Informatics Technology for Cancer Research (ITCR) Meeting](https://itcr.cancer.gov/about-itcr/meetings), Chicago, USA (Presented by Yujia Wang with **the second prize**)
+* 2022 - Flash-talk titled "Monopogen: single nucleotide variant calling from single cell sequencing" at [3rd Annual GCC Single Cell Omics Symposium](https://www.gulfcoastconsortia.org/home/research/single-cell-omics/), Houston, USA
+* 2021 - Poster titled "Single-cell characterization of CAR-NK cell exhaustion in transplantation immunotherapy" at [2nd Annual GCC Single Cell Omics Symposium](https://www.gulfcoastconsortia.org/home/research/single-cell-omics/), Houston, USA 
+* 2021 - Talk titled "Unbiased integration of single cell multi-omics data" at [Texas Single Cell Seminar](https://www.mdanderson.org/research/research-resources/core-facilities/cprit-single-core/events.html), virtual
+* 2020 - Flash-talk titiled "Unbiased integration of single cell multi-omics data" at [CZI Seed Networks 2020 Annual Meeting](https://chanzuckerberg.com/science/meetings/), virtual
+* 2019 - Talk titled "Single-cell characterization of CAR-NK cell exhaustion in transplantation immunotherapy" at [Texas Single Cell Seminar](https://www.mdanderson.org/research/research-resources/core-facilities/cprit-single-core/events.html), Houston, USA
+* 2018 - Talk titled "Estimation of kinship coefficient using sparse sequencing data" at [Dana-Farber Cancer Institute](https://www.dana-farber.org/), Boston, USA
+* 2017 - Talk titled "Estimation of kinship coefficient using sparse sequencing data" at [Genome Insititue of Singapore](https://www.a-star.edu.sg/gis), Singapore
+* 2016 - Poster titled "Estimation of kinship coefficient using sparse sequencing data" at [ASHG2016](https://www.ashg.org/), Vancouver, Canada
 
-
-## Conference (Co-)Organisation:
-
-* 2021 - EMBO Practical course: Integrative Analysis of Multi-Omics (*postponed to 2022*)
-* 2016 - 18th EMBL Phd Symposium *Life By Numbers: Towards Quantitative Biology*, EMBL Heidelberg
-
-## Teaching
-* 2022 - EBI course *Introduction to multi-omics data integration and visualisation*
-* 2022 - *Computational single-cell course* at University Heidelberg
-* 2021 - Medical Systems Biology lecture *Multi-omics: technology, computation and biology*
- at MDC Berlin
-* 2021 - *Computational single-cell course* at University Heidelberg
-* 2020 - *Computational single-cell course* at University Heidelberg
-* 2020 - *Data Analysis for Life Sciences* at University Heidelberg
-* 2016 - Teaching assistant *Statistical methods in high throughput data analysis* at EMBL
-* 2011-2013  - Teaching assistant  *Linear Algebra* and *Complex Analysis* at University Heidelberg
-
-
-## Supervision
-* ongoing - Tim Treis, Master thesis (Molecular Biotechnology, Heidelberg University)
-* ongoing - Martin Rohbeck, PhD thesis
-* ongoing - Florin Walter, Master thesis (Physics, Heidelberg University)
-* ongoing - Claudia Feng, PhD thesis (Wellcome Sanger Institute, with Leopold Parts)
-* 2022 - Ricardo Ramirez, PhD rotation project (University of Heidelberg, Faculty of Medicine & Faculty of Biosciences; University Hospital)
-* 2021/22 - Daniel Torka, Master thesis (Molecular Biotechnology, Heidelberg University, with Georg Zeller and Jakob Wirbel)
-* 2021 - Donald Hansen, Master rotation project (Molecular Biotechnology, Heidelberg University, with Rajbir Batra)
-* 2020 - Jana Braunger, Bachelor thesis (Molecular Biotechnology, Heidelberg University)
-* 2020 - Michael Altenmüller, Master thesis (Mathematics, Heidelberg University, with Ulrich Koethe and Jens Müller)
+## Teaching (selection)
+* 2022 - Instructor: “Multiomics integration and feature selection”, [Gulf Coast Consortia (GCC) Single Cell Omics Workshop](https://www.gulfcoastconsortia.org/home/research/single-cell-omics/) 2022

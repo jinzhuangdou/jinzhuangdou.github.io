@@ -13,8 +13,8 @@
 
 <title>Recent publications</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -57,6 +57,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -81,6 +82,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -138,11 +142,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -233,12 +241,12 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Britta Velten</a>
+      <a class="navbar-brand" href="index.html">Jinzhuang Dou</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -274,49 +282,177 @@ $(document).ready(function () {
 </div>
 
 
-<p>You can find all publication on <a href="https://scholar.google.de/citations?user=sJ2lkaAAAAAJ&amp;hl=de&amp;oi=ao">google scholar</a>.</p>
-<div id="methods-for-temporal-and-spatial-omics-data" class="section level2">
-<h2>Methods for temporal and spatial omics data</h2>
+<p>You can find all publication on <a
+href="https://scholar.google.com/citations?user=2_q_kTUAAAAJ&amp;hl=en">google
+scholar</a></p>
+<p align="center">
+<img src="figs/paper.jpg" width="1000" />
+</p>
+<div id="firstco-first-author" class="section level2">
+<h2>First/Co-first author</h2>
 <ul>
-<li><a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad183/7114027">FISHFactor: A Probabilistic Factor Model for Spatial Transcriptomics Data with Subcellular Resolution</a> <br/> F Walter, O Stegle, B Velten<sup>#</sup>. <em>Bioinformatics 2023</em></li>
-<li><a href="https://www.nature.com/articles/s41592-021-01343-9">Identifying temporal and spatial patterns of variation from multi-modal data using MEFISTO</a> <br/> B Velten<sup>#</sup>, JM Braunger, D Arnol, R Argelaguet, O Stegle<sup>#</sup>. <em>Nat Meth 2022</em></li>
+<li><p><a
+href="https://www.nature.com/articles/s41587-023-01873-x">Monopogen:
+single nucleotide variant calling from single cell sequencing.</a> <br/>
+<strong>J Dou</strong>, Y Tan, KH Kock, J Wang , X Cheng, LM Tan, KY
+Han, CC Hon, WY Park, JW Shin, H Jin, H Chen, L Ding, S Prabhakar, N
+Navin. K Chen. <strong>Nature Biotechnology</strong> 2023.<br />
+see <a
+href="https://www.nature.com/articles/s41588-023-01544-2">Research
+Highlight in Nature Genetics.</a></p></li>
+<li><p><a
+href="https://www.cell.com/cell/pdf/S0092-8674(19)31070-0.pdf">Large-scale
+whole-genome sequencing of three diverse Asian populations in
+Singapore.</a> <br/> D Wu*, <strong>J Dou*</strong>, X Chai*, C Bellis,
+A Wilm, C.C. Shih, W.W.J Soon, N Bertin, C.B Lin, C.C Khor, M DeGiorgio,
+S.S Cheng, L Bao, N Karnani, W Hwang, S Davila, P Tan, A Shabbir, A Moh,
+E Tan, J.N Foo, L.L Goh, K.P Leong, R.S.Y Foo, C Lam, A Richards, C.Y
+Cheng, T Aung, T Wong, H Ng, M Ackers-Johnson, E Aliwarga, K Kim Ban, D
+Bertrand, J Chambers, D Hui Chan, C Li Chan, M Chee, M Chee, P Chen, Y
+Chen, E Chew, W Chew, L Chiam, J Chong, I Chua, S Cook, W Dai, R
+Dorajoo, C Foo, R Goh, A Hillmer, I Irwan, F Jaufeerally, A Javed, J
+Jeyakani, J Koh, J Koh, P Krishnaswamy, J Kuan, N Kumari, A Lee, S Lee,
+S Lee, Y Lee, S Leong, Z Li, P Li, J Liew, O Liew, S Lim, W Lim, C Lim,
+T Lim, C Lim, S Loh, A Lok, C Chin, S Majithia, S Maurer-Stroh, W Meah,
+S Mok, N Nargarajan, P Ng, S Ng, Z Ng, J Ng, E Ng, S Ng, S Nusinovici, C
+Ong, B Pan, V Pedergnana, S Poh, S Prabhakar, K Prakash, I Quek, C
+Sabanayagam, W See, Y Sia, X Sim, W Sim, J So, D Soon, E Tai, N Tan, L
+Tan, H Tan, W Tan, M Tandiono, A Tay, S Thakur, Y Tham, Z Tiang, G Toh,
+P Tsai, L Veeravalli, C Verma, L Wang, M Wang, W Wong, Z Xie, K Yeo, L
+Zhang, W Zhai, Y Zhao, J Liu, C Wang. <strong>Cell</strong> 2019
+(<em>Cover story</em>)</p></li>
+<li><p><a
+href="https://www.science.org/doi/full/10.1126/sciadv.add6997">Metabolic
+competition is an important driver of tumor resistance after CAR NK cell
+therapy and can be overcome by cytokine engineering.</a> <br/> L Li*, V
+Mohanty*, <strong>J Dou*</strong>, Y Huang*, P P. Banerjee, Q Miao, J
+Lohr, T Vijaykumar, B Knoechel, R Basar, S Liang, M Kaplan, M Daher, E
+Liu, L Muniz-Feliciano, T J. Laskowski, D Marin, S Mielke, R E. C,
+Elizabeth J. Shpall, K Chen, K Rezvani. <strong>Science Advance</strong>
+2023</p></li>
+<li><p><a
+href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02679-x">Bi-order
+multimodal integration of single-cell data.</a> <br/> <strong>J
+Dou*</strong>, S Liang*, V Mohanty, X Cheng, S Kim, J Choi, Y Li, K
+Rezvani, R Chen, K Chen. <strong>Genome Biology</strong> 2022</p></li>
+<li><p><a
+href="https://academic.oup.com/bib/article/22/3/bbaa084/5857014">Using
+off-target data from whole-exome sequencing to improve genotyping
+accuracy, association analysis, and polygenic risk prediction.</a> <br/>
+<strong>J Dou*</strong>, D Wu*, L Ding, K Wang, M Jiang, X Chai, D.
+Reilly, E Tai, J Liu, X Sim, S Cheng, C Wang. <strong>Brief in
+Bioinformatics</strong> 2020</p></li>
+<li><p><a
+href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007021">Estimation
+of kinship coefficient in structured and admixed populations using
+sparse sequencing data.</a> <br/> <strong>J Dou</strong>, B Sun, X Sim,
+I Irwan, J D Hughes, D F Reilly, E Tai, J Liu, C Wang. <strong>PLoS
+Genetics</strong> 2017</p></li>
+<li><p><a
+href="https://academic.oup.com/genetics/article/206/3/1237/6064258">Whole-genome
+restriction mapping by “subhaploid”-based RAD sequencing: an efficient
+and flexible approach for physical mapping and genome scaffolding.</a>
+<br/> <strong>J Dou</strong>, H Dou, C Mu, L Zhang, Y Li, J, T Li, X Hu,
+S Wang, Z Bao. <strong>Genetics</strong> 2017 (<em>Cover
+story</em>)</p></li>
+<li><p><a href="https://www.nature.com/articles/srep19244">Evaluation of
+the 2b-RAD method for genomic selection in scallop breeding.</a> <br/>
+<strong>J Dou</strong>, X Li, Q Fu, W Jiao, Y Li, T Li, Y Wang, X Hu, S
+Wang, Z Bao. <strong>Scientific Report</strong> 2016</p></li>
+<li><p><a
+href="https://academic.oup.com/dnaresearch/article/21/1/85/347657">High-resolution
+linkage and quantitative trait locus mapping aided by genome survey
+sequencing: building up an integrative genomic framework for a bivalve
+mollusc.</a> <br/> W Jiao*, X Fu*, <strong>J Dou*</strong>, H Li, H Su,
+J Mao, Q Yu, L Zhang, X Hu, X Huang, Y Wang, S Wang, Z Bao. <strong>DNA
+Research</strong> 2013 (<em>Editor’s choice</em>)</p></li>
+<li><p><a
+href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0079960">RADtyping:
+an integrated package for accurate de novo codominant and dominant RAD
+genotyping in mapping populations.</a> <br/> X Fu*, <strong>J
+Dou*</strong>, J Mao, H Su, W Jiao, L Zhang, X Hu, X Huang, S Wang, Z
+Bao. <strong>PLoS ONE</strong> 2013</p></li>
+<li><p><a
+href="https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-7-17">Reference-free
+SNP calling: improved accuracy by preventing incorrect calls from
+repetitive genomic regions.</a> <br/> <strong>J Dou</strong>, X Zhao, X
+Fu, W Jiao, N Wang, L Zhang, X Hu, S Wang, Z Bao. <strong>Biology
+Direct</strong> 2012</p></li>
 </ul>
 </div>
-<div id="methods-for-integration-of-multi-omics-data" class="section level2">
-<h2>Methods for integration of multi-omics data</h2>
+<div id="contributing-author-selected" class="section level2">
+<h2>Contributing author (selected)</h2>
 <ul>
-<li><a href="https://www.biorxiv.org/content/10.1101/2023.02.23.529642v1.abstract">Multicellular factor analysis of single-cell data for a tissue-centric understanding of disease</a> <br/> R Ramirez Flores, J Lanzer, D Dimitrov, B Velten, J Saez-Rodriguez <em>bioRxiv 2023</em></li>
-<li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1?utm_source=other_website&amp;utm_medium=cpm&amp;utm_content=leaderboard&amp;utm_campaign=BSCN_2_DD_X-molfeed">MOFA+: a probabilistic framework for comprehensive integration of structured single-cell data</a> <br/> R Argelaguet*, D Arnol*, D Bredikhin, Y Deloro, B Velten, JC Marioni, et al. <em>Genome Biology 2020</em></li>
-<li><a href="https://academic.oup.com/biostatistics/advance-article/doi/10.1093/biostatistics/kxz034/5584177">Adaptive penalization in high-dimensional regression and classification with external covariates using variational Bayes</a> <br/> B Velten<sup>#</sup> &amp; W Huber<sup>#</sup>. <em>Biostatistics 2019</em></li>
-<li><a href="https://www.embopress.org/doi/10.15252/msb.20178124">Multi‐Omics Factor Analysis - a framework for unsupervised integration of multi‐omics data sets</a> <br/> R Argelaguet*, B Velten*, D Arnol, S Dietrich, T Zenz, JC Marioni, F Buettner, et al. <em>Molecular systems biology 2018</em></li>
-</ul>
-</div>
-<div id="applications" class="section level2">
-<h2>Applications</h2>
-<p><em>Evolution and development</em></p>
-<ul>
-<li><a href="https://www.biorxiv.org/content/10.1101/2022.11.06.515326v1.abstract">Spatially resolved single-cell multiomics map of human trophoblast differentiation in early pregnancy</a> <br/> A Arutyunyan, K Roberts, MA Sheridan, I Kats, L Garcia-Alonso, B Velten, et al. <em>bioRxiv 2022</em></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S2211124720312973">Developmental gene expression differences between humans and mammalian models</a> <br/> M Cardoso-Moreira, I Sarropoulos, B Velten, M Mort, DN Cooper, W Huber, et al. <em>Cell Reports 2020</em></li>
-<li><a href="https://www.nature.com/articles/s41586-019-1338-5">Gene expression across mammalian organ development</a> <br/> M Cardoso-Moreira, J Halbert, D Valloton, B Velten, C Chen, Y Shao, et al. <em>Nature 2019</em></li>
-</ul>
-<p><em>Personalized medicine</em></p>
-<ul>
-<li><a href="https://www.nature.com/articles/s41375-020-0846-5">Survey of ex vivo drug combination effects in chronic lymphocytic leukemia reveals synergistic drug effects and genetic dependencies</a> <br/> M Lukas*, B Velten*, L Sellner, K Tomska, J Huellein, T Walther, C Muley, et al. <em>Leukemia 2020</em></li>
-<li><a href="https://www.jci.org/articles/view/93801">Drug-perturbation-based stratification of blood cancer</a> <br/> S Dietrich*, M Oleś*, J Lu*, L Sellner, S Anders, B Velten, B Wu, J Hüllein, et al. <em>The Journal of clinical investigation 2018</em></li>
-</ul>
-<p><em>Gene regulation</em></p>
-<ul>
-<li><a href="https://www.nature.com/articles/s41467-019-13888-7">Mechanistic insights into transcription factor cooperativity and its impact on protein-phenotype interactions</a> <br/> IL Ibarra, NM Hollmann, B Klaus, S Augsten, B Velten, J Hennig, et al. <em>Nature Communications 2020</em></li>
-</ul>
-<p><em>Early Career training in science</em></p>
-<ul>
-<li><a href="https://www.biorxiv.org/content/10.1101/2022.03.01.481975v2.abstract">PhD and postdoc training outcomes at EMBL: changing career paths for life scientists in Europe</a> <br/> J Lu, B Velten, B Klaus, M Ramm, W Huber, R Coulthard-Graf <em>bioRxiv 2022</em></li>
-</ul>
-</div>
-<div id="phd-thesis" class="section level2">
-<h2>PhD Thesis</h2>
-<ul>
-<li><a href="https://www.research-collection.ethz.ch/handle/20.500.11850/333437">Multivariate Methods for Heterogeneous High-Dimensional Data in Genome Biology</a> <br/> B Velten <em>ETH Zurich 2019</em></li>
+<li><p><a
+href="https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-7-17">Cord
+blood characteristics determine the efficacy of allogeneic IL-15 armored
+CAR-transduced natural killer cells against CD19-positive B cell
+tumors.</a> <br/> D Marin*, Y Li*, R Basar*, H Rafei*, M Daher*,
+<strong>J Dou</strong>, V Mohanty, M Dede, Y Nieto,N Uprety,S Acharya,E
+Liu ,J Wilson, P Banerjee, H Macapinlac, C Ganesh, P Thall, R Bassett, M
+Ammari, S Rao, Cao,M Shanley, C Hosing,P Kebriaei, L Nastoupil, C
+Flowers, S Moseley,P Lin, S Ang, U Popat, M Qazilbash,R Champlin, K
+Chen, E Shpall, K Rezvani. <strong>Nature Medicine</strong>
+2023</p></li>
+<li><p><a href="https://genesdev.cshlp.org/content/36/13-14/822">KLF5
+governs sphingolipid metabolism and barrier function of the skin.</a>
+<br/> Y Lyu, Y Guan, L Deliu, E Humphrey, J Frontera, Y Yang, <strong>J
+Dou</strong>,…,K Chen,P Nagarajan, Y Ge. <strong>Genes
+Development</strong> 2022</p></li>
+<li><p><a
+href="https://www.nature.com/articles/s41467-022-28028-x">Systematic
+decomposition of sequence determinants governing CRISPR/Cas9
+specificity.</a> <br/> R Fu*, W He*, <strong>J Dou</strong>, O D.
+Villarreal, E Bedford, H Wang, C Hou, L Zhang, Y Wang, Y Chen, X Gao, M
+Depken, H Xu. <strong>Nature Communications</strong> 2022</p></li>
+<li><p><a
+href="https://www.nature.com/articles/s43588-021-00070-7">Single-cell
+manifold-preserving feature selection for detecting rare cell
+populations.</a> <br/> S Liang, V Mohanty, <strong>J Dou</strong>, Q
+Miao, Y Huang, M Muftuoglu, L Ding, W Peng, K Chen. <strong>Nature
+Computational Science</strong> 2021</p></li>
+<li><p><a
+href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02291-5">Single-cell
+copy number lineage tracing enabling gene discovery.</a> <br/> F Wang, Q
+Wang, V Mohanty, S Liang, <strong>J Dou</strong>, J Han, D Conterno
+Minussi, R Gao, L Ding, N Navin, K Chen. <strong>Genome Biology</strong>
+2021</p></li>
+<li><p><a
+href="https://academic.oup.com/mbe/article/38/10/4463/6307269?login=true">Genetic
+Admixture in the Culturally Unique Peranakan Chinese Population in
+Southeast Asia.</a> <br/> D Wu, P Li, B Pan, Z Tiang, <strong>J
+Dou</strong>, I Williantarra, A Pribowo, R Nurdiansyah, SG Peranakan
+Project, R SY Foo, C Wang. <strong>Molecular Biology and
+Evolution</strong> 2021</p></li>
+<li><p><a
+href="https://www.cell.com/cell-reports/pdfExtended/S2211-1247(21)00849-4">Generation
+of glucocorticoid-resistant SARS-CoV-2 T cells for adoptive cell
+therapy.</a> <br/> R Basar, N Uprety, E Ensley, M Daher, K
+Klein,…,<strong>J Dou</strong>,..,K Rezvani. <strong>Cell
+Report</strong> 2021</p></li>
+<li><p><a href="https://www.jci.org/articles/view/142116">Targeting the
+v integrin-TGF-beta axis improves natural killer cell function against
+glioblastoma stem cells.</a> <br/> H Shaim, M Shanley, R Basar, M
+Daher,…, <strong>J Dou</strong>,…,K Chen, F Lang, E Shpall, A
+Heimberger, K Rezvan. <strong>The Journal of Clinical
+Investigation</strong> 2021</p></li>
+<li><p><a href="https://www.nature.com/articles/s41467-019-12489-8">De
+novo identification of essential protein domains from CRISPR-Cas9
+tiling-sgRNA knockout screens.</a> <br/> W He, L Zhang, O Villarreal, R
+Fu, E Bedford, <strong>J Dou</strong>, A Patel, M Bedford, X Shi, T
+Chen, B Bartholomew, H Xu. <strong>Nature Communications</strong>
+2019</p></li>
+<li><p><a
+href="https://www.nature.com/articles/s41467-017-01927-0">Scallop genome
+reveals molecular adaptations to semi-sessile life and neurotoxins.</a>
+<br/> Y Li, X Sun, X Hu, X Xun, J Zhang, X Guo,…, <strong>J
+Dou</strong>,…, Z Jiang, R Li, S Wang, Z Bao. <strong>Nature
+Communications</strong> 2017</p></li>
+<li><p><a href="https://www.nature.com/articles/s41559-017-0120">Scallop
+genome provides insights into evolution of bilaterian karyotype and
+development.</a> <br/> S Wang, J Zhang, W Jiao, J Li, X Xun, Y
+Sun,…,<strong>J Dou</strong>,…, Z Jiang, D Chourrout, R Li, Z Bao.
+<strong>Nature Ecology and Evolution</strong> 2017</p></li>
 </ul>
 <p>* denotes equal contributions, <sup>#</sup> corresponding authors</p>
 </div>

@@ -2,17 +2,15 @@
 title: "About me"
 ---
 
-I am tenure-track-professor for *Multifactorial Data Analysis and Machine Learning in the Life Sciences* at [the Centre for organismal studies (COS)](https://www.cos.uni-heidelberg.de/en/research-groups/biological-data-science) and [the Centre for Scientific Computing (IWR)](https://typo.iwr.uni-heidelberg.de/home) of Heidelberg University.
+I am a computational biologist at [MD Anderson Cancer Center](https://www.mdanderson.org/research/departments-labs-institutes/labs/ken-chen-laboratory.html). Trained as a mathematician, I obtained a PhD in Genetics from [Ocean University of China](https://cmls.ouc.edu.cn/2023/0910/c13673a441182/page.html). From June 2015- June 2018, I was a postdoc at the [Genome Institute of Singapore](https://www.a-star.edu.sg/gis) in Singapore with research focusing on human population genetics. From June 2020, as an associated data scientist, I worked at MD Anderson Cancer Center with research focusing on single cell genomics.
 
-Trained as a mathematician, I obtained a PhD in statistics from ETH Zurich and EMBL Heidelberg working with [Peter Bühlmann](https://math.ethz.ch/research/seminar-for-statistics/peter-buehlmann.html) and [Wolfgang Huber](https://www.huber.embl.de). From 2019-2022, I was a postdoc at the German Cancer Research Center and the [Wellcome Sanger Institute](https://www.sanger.ac.uk) in Cambridge. As a visiting researcher I worked with [Susan Holmes at Stanford University](https://susan.su.domains/) and with [Dagmar Iber at D-BSSE](https://bsse.ethz.ch/cobi).
+In my research, I aim to apply statistical reasoning in combination with modern machine learning approaches to gain insights into complex diseases (including cancer). For this I develop statistical methods and computational tools to analyse and integrate 'omics data and apply them in a variety of fields including personalized medicine, cancer biology, and single cell biology. 
 
-In my research, I aim to apply statistical reasoning in combination with modern machine learning approaches to gain insights into fundamental processes that underlie complex biological systems and dissect the molecular heterogeneity of biological processes. For this I develop statistical methods and computational tools to analyse and integrate 'omics data and apply them in a variety of fields including personalized medicine, cancer biology, single cell biology and developmental biology. The tools and methods I develop are available from [Bioconductor](https://www.bioconductor.org), [PyPI](https://pypi.org) and GitHub.
-
-You can find me on [Twitter](https://twitter.com/brittavelten), [LinkedIn](https://www.linkedin.com/in/britta-velten-22a36813a), [Google Scholar](https://scholar.google.de/citations?user=sJ2lkaAAAAAJ&hl=de&oi=ao) and [GitHub](https://github.com/bv2).
+You can find me on [LinkedIn](https://www.linkedin.com/in/jinzhuang-dou-828369261/), [Google Scholar](https://scholar.google.com/citations?user=2_q_kTUAAAAJ&hl=en) and [GitHub](https://github.com/jinzhuangdou).
 
 <br>
 
 <p align="center">
-![](figs/britta.jpg){width=200px}
+![](figs/britta.jpg){width=height=300px}
 </p>
 

@@ -13,8 +13,8 @@
 
 <title>Software</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -57,6 +57,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -81,6 +82,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -138,11 +142,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -233,12 +241,12 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Britta Velten</a>
+      <a class="navbar-brand" href="index.html">Jinzhuang Dou</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -274,28 +282,66 @@ $(document).ready(function () {
 </div>
 
 
-<p>Most of my software as well as vignettes and scripts for the analyses connnected to my research can be found on my <a href="https://github.com/bv2">GitHub page</a>. In addition, I maintain the following software packages:</p>
-<div id="mofa" class="section level2">
-<h2>MOFA</h2>
-<p>MOFA provides a statistical framework for the unsupervised integration of multi-modal data. MOFA is implemented in</p>
-<ul>
-<li>the R package <code>MOFA2</code>, which is available from <a href="http://bioconductor.org/packages/release/bioc/html/MOFA2.html">Bioconductor</a> and from <a href="https://github.com/bioFAM/MOFA2">GitHub</a>,</li>
-<li>in the Python package <code>mofapy2</code>, which available from <a href="https://pypi.org/project/mofapy2/">PyPI</a> and <a href="https://github.com/bioFAM/mofapy2">GitHub</a>.</li>
-</ul>
-<p>Note that older versions have been deprecated: <a href="http://bioconductor.org/packages/release/bioc/html/MOFA.html"><code>MOFA</code></a>, <a href="https://pypi.org/project/mofapy/"><code>mofapy</code></a></p>
-<p>For information on MOFA please visit <a href="https://biofam.github.io/MOFA2/">our MOFA webpage</a> for installation instructions, tutorials, FAQs and a link to a Slack group to get help.</p>
+<p>Most of my software as well as vignettes and scripts for the analyses
+connnected to my research can be found on my <a
+href="https://github.com/jinzhuangdou">GitHub page</a>. I maintain the
+following software packages:</p>
+<div
+id="monopogen-single-nucleotide-variant-calling-from-single-cell-sequencing"
+class="section level2">
+<h2>Monopogen (Single nucleotide variant calling from single cell
+sequencing)</h2>
+<p>Monopogen is developed to achieve SNV calling from single cell RNA
+sequencing, single cell ATAC sequencing. The package
+<code>Monopogen</code> is available from <a
+href="https://github.com/KChen-lab/Monopogen">GitHub</a></p>
 </div>
-<div id="mefisto" class="section level2">
-<h2>MEFISTO</h2>
-<p>MEFISTO incorporates temporal and spatial information on the samples into a decomposition of multi-modal data and opens up novel downstream-analyses. It is integrated into the most the R package <code>MOFA2&gt;= 1.1.7</code> and Python package <code>mofapy2 &gt;= 0.6.0</code>. See <a href="https://biofam.github.io/MOFA2/MEFISTO">the MEFISTO webpage</a> for more information.</p>
+<div id="bindsc-bi-order-integration-of-single-cell-multi-omics-data"
+class="section level2">
+<h2>BindSC (Bi-order integration of single cell multi-omics data)</h2>
+<p>This tool is developed to achive bi-order integration (in silico
+multi-omics data) of single cell RNA sequencing, single cell ATAC
+sequencing, spacial transcriptomics and CyTOF data. The package
+<code>BindSC</code> is available from <a
+href="https://github.com/KChen-lab/bindSC">GitHub</a></p>
 </div>
-<div id="graper" class="section level2">
-<h2>graper</h2>
-<p>graper performs high-dimensional regression with adaptive penalization based on side-information about the features and is availabe as Bioconductor package <a href="http://bioconductor.org/packages/release/bioc/html/graper.html">graper</a>.</p>
+<div
+id="wescall-a-genotype-calling-pipeline-for-whole-exome-sequencing-wes-data"
+class="section level2">
+<h2>WEScall (A genotype calling pipeline for whole exome sequencing
+(WES) data)</h2>
+<p>WESCall can analyze both target and off-target data, and is a useful
+tool to facilitate WES sutides with decent amount of off-target data.The
+package <code>WEScall</code> is available from <a
+href="https://github.com/dwuab/WEScall">GitHub</a></p>
 </div>
-<div id="fishfactor" class="section level2">
-<h2>FISHFactor</h2>
-<p>FISHFactor identifies subcellular expression patterns from single-molecule resolved transcriptomics data and uses them to identify spatial gene clusters and dissect cell-to-cell heterogeneity. The code is available from <a href="https://github.com/bioFAM/FISHFactor">GitHub</a>.</p>
+<div
+id="seekin-sequencing-based-estimation-of-kniship-and-inbreeding-coefficients"
+class="section level2">
+<h2>SEEKIN (Sequencing-based estimation of kniship and inbreeding
+coefficients)</h2>
+<p>This program estimates the kinship and inbreeding coefficients based
+on extremely low-sequencing coverage datasets (typically lower than
+0.5X). The code is available from <a
+href="https://github.com/chaolongwang/SEEKIN">GitHub</a>.</p>
+</div>
+<div
+id="ammo-an-integrated-package-for-whole-genome-restriction-mapping-and-genome-scaffolding"
+class="section level2">
+<h2>AMMO (An integrated package for whole-genome restriction mapping and
+genome scaffolding)</h2>
+<p>This is an integrated program that generates 2b-RAD-based restriction
+maps for scaffolding draft genome assemblies produced by using short
+Illumina reads or long PacBio reads. The package <code>AMMO</code> is
+available from <a
+href="https://github.com/jinzhuangdou/AMMO">GitHub</a></p>
+</div>
+<div id="radtyping-de-novo-rad-genotyping-in-mapping-populations"
+class="section level2">
+<h2>RADTyping (De novo RAD Genotyping in Mapping Populations)</h2>
+<p>This is an integrated package for accurate De Novo codominant and
+dominant RAD genotyping in mapping populations. The code is available
+from <a href="https://github.com/jinzhuangdou/RADtyping">GitHub</a>.</p>
 </div>
 
 

@@ -13,7 +13,7 @@
 
 <title>About me</title>
 
-<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -179,8 +179,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -188,9 +188,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -239,7 +246,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Britta Velten</a>
+      <a class="navbar-brand" href="index.html">Jinzhuang Dou</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -275,30 +282,32 @@ $(document).ready(function () {
 </div>
 
 
-<p> I am a data scientist for <em> computational biology </em> at <a
-href="https://www.cos.uni-heidelberg.de/en/research-groups/biological-data-science"> MD Anderson Cancer Center (MDACC) .</p>
-<p>Trained as a mathematician, I obtained a PhD in genetics from Ocean University of China in 2015. 
-From 2015-2018, I was a postdoc at the Genome Insitute of Singapore <a href="https://www.a-star.edu.sg/gis"> GIS</a> in
-Singapore. As a data scientist, I worked with <a
-href="https://susan.su.domains/"> Dr. Ken Chen at MD Anderson Cancer Center <a href="https://www.mdanderson.org/research/departments-labs-institutes/labs/ken-chen-laboratory.html">.</p>
+<p>I am a computational biologist at <a
+href="https://www.mdanderson.org/research/departments-labs-institutes/labs/ken-chen-laboratory.html">MD
+Anderson Cancer Center</a>. Trained as a mathematician, I obtained a PhD
+in Genetics from <a
+href="https://cmls.ouc.edu.cn/2023/0910/c13673a441182/page.html">Ocean
+University of China</a>. From June 2015- June 2018, I was a postdoc at
+the <a href="https://www.a-star.edu.sg/gis">Genome Institute of
+Singapore</a> in Singapore with research focusing on human population
+genetics. From June 2020, as an associated data scientist, I worked at
+MD Anderson Cancer Center with research focusing on single cell
+genomics.</p>
 <p>In my research, I aim to apply statistical reasoning in combination
-with modern machine learning approaches to gain insights into
-fundamental processes that underlie complex disease (including cancer). For this I
-develop statistical methods and computational tools to analyse and
-integrate ’omics data and apply them in a variety of fields including
-personalized medicine, cancer biology, single cell biology and
-developmental biology. The tools and methods I develop are available
-from <a href="https://www.bioconductor.org">Bioconductor</a>, <a
-href="https://pypi.org">PyPI</a> and GitHub.</p>
+with modern machine learning approaches to gain insights into complex
+diseases (including cancer). For this I develop statistical methods and
+computational tools to analyse and integrate ’omics data and apply them
+in a variety of fields including personalized medicine, cancer biology,
+and single cell biology.</p>
 <p>You can find me on <a
-href="https://twitter.com/brittavelten">Twitter</a>, <a
-href="https://www.linkedin.com/in/britta-velten-22a36813a">LinkedIn</a>,
+href="https://www.linkedin.com/in/jinzhuang-dou-828369261/">LinkedIn</a>,
 <a
-href="https://scholar.google.de/citations?user=sJ2lkaAAAAAJ&amp;hl=de&amp;oi=ao">Google
-Scholar</a> and <a href="https://github.com/bv2">GitHub</a>.</p>
+href="https://scholar.google.com/citations?user=2_q_kTUAAAAJ&amp;hl=en">Google
+Scholar</a> and <a
+href="https://github.com/jinzhuangdou">GitHub</a>.</p>
 <p><br></p>
 <p align="center">
-<img src="figs/britta.jpg" width="200" />
+<img src="figs/britta.jpg" />
 </p>
 
 
