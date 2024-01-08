@@ -1,0 +1,20 @@
+name: "britta-velten"
+navbar:
+  title: "Britta Velten"
+  left:
+    - text: "About me"
+      href: index.html
+    - text: "Publications"
+      href: pubs.html
+    - text: "Software"
+      href: software.html
+    - text: "Conferences and Teaching"
+      href: teaching.html
+    - text: "Links"
+      href: links.html
+output:
+    html_document:
+        theme: cosmo
+        css: style.css
+output_dir: "."
+

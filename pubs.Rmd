@@ -1,0 +1,64 @@
+---
+title: "Recent publications"
+---
+
+You can find all publication on [google scholar](https://scholar.google.de/citations?user=sJ2lkaAAAAAJ&hl=de&oi=ao).
+
+## Methods for temporal and spatial omics data
+
+* [FISHFactor: A Probabilistic Factor Model for Spatial Transcriptomics Data with Subcellular Resolution](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad183/7114027) <br/>
+F Walter, O Stegle, B Velten^#^. *Bioinformatics 2023*
+* [Identifying temporal and spatial patterns of variation from multi-modal data using MEFISTO](https://www.nature.com/articles/s41592-021-01343-9) <br/>
+B Velten^#^, JM Braunger, D Arnol, R Argelaguet, O Stegle^#^. *Nat Meth 2022*
+
+
+## Methods for integration of multi-omics data
+
+* [Multicellular factor analysis of single-cell data for a tissue-centric understanding of disease](https://www.biorxiv.org/content/10.1101/2023.02.23.529642v1.abstract) <br/>
+R Ramirez Flores,  J Lanzer,  D Dimitrov,  B Velten, J Saez-Rodriguez
+ *bioRxiv 2023*
+* [MOFA+: a probabilistic framework for comprehensive integration of structured single-cell data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1?utm_source=other_website&utm_medium=cpm&utm_content=leaderboard&utm_campaign=BSCN_2_DD_X-molfeed) <br/>
+R Argelaguet\*, D Arnol\*, D Bredikhin, Y Deloro, B Velten, JC Marioni, et al. *Genome Biology 2020*
+* [Adaptive penalization in high-dimensional regression and classification with external covariates using variational Bayes](https://academic.oup.com/biostatistics/advance-article/doi/10.1093/biostatistics/kxz034/5584177) <br/>
+B Velten^#^ & W Huber^#^. *Biostatistics 2019*
+* [Multi‐Omics Factor Analysis - a framework for unsupervised integration of multi‐omics data sets](https://www.embopress.org/doi/10.15252/msb.20178124) <br/>
+R Argelaguet\*, B Velten\*, D Arnol, S Dietrich, T Zenz, JC Marioni, F Buettner, et al. *Molecular systems biology 2018*
+
+## Applications
+
+*Evolution and development*
+
+* [Spatial multiomics map of trophoblast development in early pregnancy](https://www.nature.com/articles/s41586-023-05869-0) <br/>
+A Arutyunyan, K Roberts, K Troulé, F Wong, MA Sheridan,  I Kats, L Garcia-Alonso, B Velten, et al.
+*Nature 2023*
+* [Developmental gene expression differences between humans and mammalian models](https://www.sciencedirect.com/science/article/pii/S2211124720312973) <br/>
+M Cardoso-Moreira, I Sarropoulos, B Velten, M Mort, DN Cooper, W Huber, et al.
+*Cell Reports 2020*
+* [Gene expression across mammalian organ development](https://www.nature.com/articles/s41586-019-1338-5) <br/>
+M Cardoso-Moreira, J Halbert, D Valloton, B Velten, C Chen, Y Shao, et al. *Nature 2019*
+
+*Personalized medicine*
+
+* [Survey of ex vivo drug combination effects in chronic lymphocytic leukemia
+reveals synergistic drug effects and genetic dependencies](https://www.nature.com/articles/s41375-020-0846-5) <br/>
+M Lukas\*, B Velten\*, L Sellner, K Tomska, J Huellein, T Walther, C Muley, et al. *Leukemia 2020*
+* [Drug-perturbation-based stratification of blood cancer](https://www.jci.org/articles/view/93801) <br/>
+S Dietrich\*, M Oleś\*, J Lu\*, L Sellner, S Anders, B Velten, B Wu, J Hüllein, et al. *The Journal of clinical investigation 2018* 
+
+*Gene regulation*
+
+* [Mechanistic insights into transcription factor cooperativity and its impact on protein-phenotype interactions](https://www.nature.com/articles/s41467-019-13888-7) <br/>
+IL Ibarra, NM Hollmann, B Klaus, S Augsten, B Velten, J Hennig, et al. *Nature Communications 2020*
+
+*Early Career training in science*
+
+* [PhD and postdoc training outcomes at EMBL: changing career paths for life scientists in Europe](https://www.biorxiv.org/content/10.1101/2022.03.01.481975v2.abstract) <br/>
+J Lu,  B Velten,  B Klaus, M Ramm,  W Huber,  R Coulthard-Graf *bioRxiv 2022*
+  
+## PhD Thesis
+
+* [Multivariate Methods for Heterogeneous High-Dimensional Data in Genome Biology](https://www.research-collection.ethz.ch/handle/20.500.11850/333437) <br/>
+B Velten *ETH Zurich 2019*
+
+
+\* denotes equal contributions, ^#^ corresponding authors

@@ -1,0 +1,30 @@
+---
+title: "Software"
+---
+
+Most of my software as well as vignettes and scripts for the analyses connnected to my research can be found on my [ GitHub page](https://github.com/bv2). In addition, I maintain the following software packages:
+
+
+## MOFA 
+
+MOFA provides a statistical framework for the unsupervised integration of multi-modal data. MOFA is implemented in
+
+* the R package `MOFA2`, which is available from [Bioconductor](http://bioconductor.org/packages/release/bioc/html/MOFA2.html) and from [GitHub](https://github.com/bioFAM/MOFA2), 
+* in the Python package `mofapy2`, which available from [PyPI](https://pypi.org/project/mofapy2/) and [GitHub](https://github.com/bioFAM/mofapy2). 
+
+Note that older versions have been deprecated: [`MOFA`](http://bioconductor.org/packages/release/bioc/html/MOFA.html), [`mofapy`](https://pypi.org/project/mofapy/)
+
+For information on MOFA please visit [our MOFA webpage](https://biofam.github.io/MOFA2/) for installation instructions, tutorials, FAQs and a link to a Slack group to get help.
+
+## MEFISTO
+
+MEFISTO incorporates temporal and spatial information on the samples into a decomposition of multi-modal data and opens up novel downstream-analyses. It is integrated into the most the R package `MOFA2>= 1.1.7` and Python package `mofapy2 >= 0.6.0`. See [the MEFISTO webpage](https://biofam.github.io/MOFA2/MEFISTO) for more information.
+
+## graper
+
+graper performs high-dimensional regression with adaptive penalization based on side-information about the features and is availabe as Bioconductor package [graper](http://bioconductor.org/packages/release/bioc/html/graper.html).
+
+
+## FISHFactor
+
+FISHFactor identifies subcellular expression patterns from single-molecule resolved transcriptomics data and uses them to identify spatial gene clusters and dissect cell-to-cell heterogeneity. The code is available from [GitHub](https://github.com/bioFAM/FISHFactor).

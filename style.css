@@ -1,0 +1,33 @@
+<style type="text/css">
+h1 {
+  font-size: 24px;
+}
+h1.title {
+  font-size: 30px;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
+}
+h2 {
+	border-bottom: 1px solid #cccccc;
+  font-size: 20px;
+	padding-top: 70px !important;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+
+ul li { padding: 3px 0px; }
+
+</style>

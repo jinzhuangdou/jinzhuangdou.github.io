@@ -1,0 +1,30 @@
+---
+title: "Links and useful resources"
+---
+
+
+If you are interested in learning data science for the life sciences I recommend the following:
+
+* [Data Analysis for the Life Sciences](https://leanpub.com/dataanalysisforthelifesciences) by Rafael A Irizarry and Michael I Love - *A very nice introduction  to the basic statistical concepts and programming skills for everyone who wants to start analysing his/her own data. Accompanied by an online course.*
+* [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/index.html) by Susan Holmes and Wolfgang Huber - *A great resource providing a hands-on approach to learn the important statical concepts in the analysis of modern biological data*
+
+
+If you want to learn more on Machine Learning or Causal Inference or dive deeper into high-dimensional statistics or Bayesian inference I can recommend
+
+* [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)  by Christopher Bishop
+* [Gaussian Processes for Machine Learning](http://www.gaussianprocess.org/gpml/chapters/RW.pdf) by C. E. Rasmussen & C. K. I. Williams
+* [Elements of Causal Inference](https://mitpress.mit.edu/books/elements-causal-inference) by Jonas Peters, Dominik Janzing and Bernhard Schölkopf
+* [Statistics for High-Dimensional Data: Methods, Theory and Applications](http://www.springer.com/statistics/statistical+theory+and+methods/book/978-3-642-20191-2) by Peter Bühlmann and Sara van de Geer
+* Bayesian Methods for Data Analysis by  Bradley P. Carlin and Thomas A. Louis
+
+For an introduction to computational analysis of single cell data I find the following reviews and tutorials a good starting point:
+
+* [Current best practices in single‐cell RNA‐seq analysis: a tutorial]( https://www.embopress.org/doi/10.15252/msb.20188746) by Malte Luecken and
+Fabian Theis
+* [Scanpy](https://scanpy.readthedocs.io/en/stable/tutorials.html) and [Seurat](https://satijalab.org/seurat/vignettes.html) tutorials
+* [Analysis of single cell RNA-seq data](https://scrnaseq-course.cog.sanger.ac.uk/website/index.html)
+* [Orchestrating Single-Cell Analysis with Bioconductor](https://osca.bioconductor.org)
+* https://github.com/seandavi/awesome-single-cell
+
+A nice collection of links on multi-modal/multi-omics data is available here:
+https://github.com/mikelove/awesome-multi-omics
